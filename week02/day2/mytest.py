@@ -1,0 +1,20 @@
+# info = input("please")
+# print(tuple(info.split(",")))
+# print(type(str(["1","2","3"])))
+# print(sum(["1","2","3"]))
+# num = eval(input("plz"))
+# print(type(num), num)
+# sorted(set())
+# for item in num:
+#     counts = num.count(item)
+#     print(item, counts)
+
+# num.count(num[0])
+num1 = (1,6,32)
+num2 = (4,2,23)
+num3 = (5,4,43)
+num4 = (13,6,13)
+num5 = (5,6,42)
+num6 = (6,4,25)
+mylist = [num1,num2,num3,num4,num5,num6]
+print(sorted(mylist,key=lambda x:(x[2])))

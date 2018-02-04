@@ -1,0 +1,12 @@
+# 统计一个文件中的字符数、单词数和行数 单词由空格隔开
+filename = input("请输入文件名：")
+file = open("./alldirs/" + filename, mode="r", encoding="utf-8")
+mstr = file.read()
+print("字符总数为：",len(mstr))
+list1=mstr.split(" ")
+print("单词数为：",len(list1))
+file.seek(0)
+count =len(file.readlines())
+print("总的行数为：",count)
+file.close()
+# print("hk13_02.txt")
